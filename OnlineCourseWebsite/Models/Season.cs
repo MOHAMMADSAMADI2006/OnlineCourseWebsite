@@ -2,9 +2,10 @@
 {
     public class Season
     {
-        public int Id { get; set; }
-        public int CourseId { get; set; }
+        public Guid Id { get; set; }
+        public Guid CourseId { get; set; }
         public string Title { get; set; }
-        public int Order { get; set; }
+        public List<Lesson> lessons { get; set; }
+
     }
 }

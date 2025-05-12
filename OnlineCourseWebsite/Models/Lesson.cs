@@ -2,12 +2,11 @@
 {
     public class Lesson
     {
-        public int Id { get; set; }
-        public int SeasonId { get; set; }
+        public Guid Id { get; set; }
+        public Guid SeasonId { get; set; }
         public string Title { get; set; }
         public string VideoUrl { get; set; }
-        public TimeSpan Duration { get; set; }
-        public int Order { get; set; }
-        public bool IsFree { get; set; }
+        public string Status { get; set; }//enum
+        public bool Lock { get; set; }
     }
 }
